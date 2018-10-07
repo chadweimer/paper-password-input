@@ -1,3 +1,6 @@
+import { IronValidatorBehavior } from '@polymer/iron-validator-behavior/iron-validator-behavior.js';
+
+import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 /**
 Validates that the value has a certain minimal length
 
@@ -8,29 +11,20 @@ See Material Design specification:
 "Show error text only after user interaction with a field. If the user inputs incorrect data, helper text may transform into error text."
 @see https://material.io/guidelines/patterns/errors.html#errors-user-input-errors
 */
-/*
-  FIXME(polymer-modulizer): the above comments were extracted
-  from HTML and may be out of place here. Review them and
-  then delete this comment!
-*/
-import { IronValidatorBehavior } from '@polymer/iron-validator-behavior/iron-validator-behavior.js';
-
-import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
-
 Polymer({
-		is: 'min-length-validator',
-		properties: {
+    is: 'min-length-validator',
+    properties: {
         /**
-         * Minimal length
-         */
+        * Minimal length
+        */
         minLength: Number
-		},
-		behaviors: [
+    },
+    behaviors: [
         IronValidatorBehavior
-		],
-
-		validate: function(value) {
+    ],
+    
+    validate: function(value) {
         // Don't trigger warning if no value was entered
         return !value || value.length >= this.minLength;
-		}
+    }
 });
