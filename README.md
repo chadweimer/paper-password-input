@@ -1,21 +1,21 @@
 **[Blog post about the element](https://medium.com/collaborne-engineering/password-input-for-polymer-92f1b98f2ca9#.inaeg82yb)**
 
 
-paper-password-input [![Build Status](https://travis-ci.org/Collaborne/paper-password-input.svg?branch=master)](https://travis-ci.org/Collaborne/paper-password-input) [![Bower version](https://badge.fury.io/bo/paper-password-input.svg)](http://badge.fury.io/bo/paper-password-input) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/paper-password-input) [![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/Collabornepaper-password-input) [![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/Collabornepaper-password-input.svg)](https://vaadin.com/directory/component/Collabornepaper-password-input)
+paper-password-input [![Build Status](https://travis-ci.com/chadweimer/paper-password-input.svg?branch=master)](https://travis-ci.com/chadweimer/paper-password-input) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@cwmr/paper-password-input)
 =========
 
 `paper-password-input` provides a Material Design input field to enter passwords. The web component is built with [Polymer](https://www.polymer-project.org).
 
 To use this element:
 
-`bower install paper-password-input`
+`npm install @cwmr/paper-password-input`
 
 <!--
 ```
 <custom-element-demo>
   <template>
-    <link rel="import" href="paper-password-input.html">
-    <link rel="import" href="min-length-validator.html">
+    <script type="module" src="paper-password-input.html"></script>
+    <script type="module" src="min-length-validator.html"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
@@ -35,7 +35,8 @@ To use this element:
 
     This software is licensed under the Apache 2 license, quoted below.
 
-    Copyright 2011-2016 Collaborne B.V. <http://github.com/Collaborne/>
+    Copyright 2011-2016 Collaborne B.V. <https://github.com/Collaborne/>
+    Copyright 2018 Chad Weimer <https://github.com/chadweimer>
 
     Licensed under the Apache License, Version 2.0 (the "License"); you may not
     use this file except in compliance with the License. You may obtain a copy of
