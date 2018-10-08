@@ -1,7 +1,7 @@
 **[Blog post about the element](https://medium.com/collaborne-engineering/password-input-for-polymer-92f1b98f2ca9#.inaeg82yb)**
 
 
-paper-password-input [![Build Status](https://travis-ci.org/chadweimer/paper-password-input.svg?branch=master)](https://travis-ci.com/chadweimer/paper-password-input) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@cwmr/paper-password-input)
+paper-password-input [![Build Status](https://travis-ci.com/chadweimer/paper-password-input.svg?branch=master)](https://travis-ci.com/chadweimer/paper-password-input) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@cwmr/paper-password-input)
 =========
 
 `paper-password-input` provides a Material Design input field to enter passwords. The web component is built with [Polymer](https://www.polymer-project.org).
