@@ -27,7 +27,7 @@
     "@polymer/iron-validator-behavior": "^3.0.0",
     "@polymer/paper-input": "^3.0.0",
     "@polymer/paper-icon-button": "^3.0.0",
-    "@polymer/paper-styles": "^3.0.08"
+    "@polymer/paper-styles": "^3.0.0"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0",
