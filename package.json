@@ -11,7 +11,7 @@
   "homepage": "https://github.com/chadweimer/paper-password-input",
   "name": "@cwmr/paper-password-input",
   "version": "3.0.0",
-  "reposieory": "github:chadweimer/paper-password-input",
+  "repository": "github:chadweimer/paper-password-input",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",
