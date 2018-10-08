@@ -32,5 +32,8 @@
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0",
     "wct-browser-legacy": "^1.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
