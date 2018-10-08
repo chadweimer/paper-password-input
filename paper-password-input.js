@@ -12,55 +12,55 @@ A Material Design input field to enter passwords
 @demo demo/index.html
 */
 Polymer({
-        is: 'paper-password-input',
-        _template: html`
-        <style>
-            .visibility-icon {
-                color: var(--disabled-text-color);
-                /** Bottom align visibility button with input box */
-                height: 32px;
-                width: 32px;
-                padding: 0 4px;
-                margin-top: -6px;
-            }
-        </style>
-
-        <paper-input
-            id="input"
-            type="[[_getType(visible)]]"
-            value="{{value}}"
-            label="[[label]]"
-            name="[[name]]"
-            maxlength="[[maxlength]]"
-            disabled="[[disabled]]"
-            readonly="[[readonly]]"
-            required="[[required]]"
-            autofocus="[[autofocus]]"
-            auto-validate="[[autoValidate]]"
-            allowed-pattern="[[allowedPattern]]"
-            invalid="{{invalid}}"
-            validator="[[validator]]"
-            error-message="[[errorMessage]]"
-            char-counter="[[charCounter]]"
-            always-float-label="[[alwaysFloatLabel]]">
-            <paper-icon-button
-                slot="suffix"
-                icon="[[_getIcon(visible)]]"
-                on-tap="_toggleVisible"
-                class="visibility-icon"
-                tabindex="-1"
+    is: 'paper-password-input',
+    _template: html`
+    <style>
+        .visibility-icon {
+            color: var(--disabled-text-color);
+            /** Bottom align visibility button with input box */
+            height: 32px;
+            width: 32px;
+            padding: 0 4px;
+            margin-top: -6px;
+        }
+    </style>
+    
+    <paper-input
+        id="input"
+        type="[[_getType(visible)]]"
+        value="{{value}}"
+        label="[[label]]"
+        name="[[name]]"
+        maxlength="[[maxlength]]"
+        disabled="[[disabled]]"
+        readonly="[[readonly]]"
+        required="[[required]]"
+        autofocus="[[autofocus]]"
+        auto-validate="[[autoValidate]]"
+        allowed-pattern="[[allowedPattern]]"
+        invalid="{{invalid}}"
+        validator="[[validator]]"
+        error-message="[[errorMessage]]"
+        char-counter="[[charCounter]]"
+        always-float-label="[[alwaysFloatLabel]]">
+        <paper-icon-button
+            slot="suffix"
+            icon="[[_getIcon(visible)]]"
+            on-tap="_toggleVisible"
+            class="visibility-icon"
+            tabindex="-1"
             ></paper-icon-button>
     </paper-input>
-        `,
-		properties: {
+    `,
+    properties: {
         /**
-         * True if the content of the password field is visible
-         */
+        * True if the content of the password field is visible
+        */
         visible: {
             type: Boolean,
             value: false
         },
-
+        
         value: {
             type: String,
             notify: true
@@ -82,19 +82,19 @@ Polymer({
         maxlength: Number,
         allowedPattern: String,
         alwaysFloatLabel: Boolean
-		},
-
-		validate: function() {
+    },
+    
+    validate: function() {
         return this.$.input.validate();
-		},
-
-		_getIcon: function(visible) {
+    },
+    
+    _getIcon: function(visible) {
         return visible ? 'icons:visibility' : 'icons:visibility-off';
-		},
-		_getType: function(visible) {
+    },
+    _getType: function(visible) {
         return visible ? '' : 'password';
-		},
-		_toggleVisible: function() {
+    },
+    _toggleVisible: function() {
         this.visible = !this.visible;
-		},
+    },
 });
