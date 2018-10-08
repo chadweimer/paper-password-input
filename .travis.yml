@@ -5,7 +5,6 @@ language: node_js
 node_js:
   - node
 addons:
-  chrome: stable
   firefox: latest-esr
 cache:
   directories:
@@ -14,7 +13,7 @@ cache:
 before_install:
   - 'if [ -d node_modules ] && [ x$(cat node_modules/.last-node-version 2>/dev/null) != x$(node -e ''console.log(process.version)'') ]; then npm rebuild && node -e ''console.log(process.version)'' > node_modules/.last-node-version; fi'
 before_script:
-  - npm install web-component-tester polylint
-  - $(npm bin)/polylint --no-recursion
-script: LAUNCHPAD_BROWSERS=firefox xvfb-run $(npm bin)/wct --module-resolution=node --npm
+  - npm install polymer-cli
+  - $(npm bin)/polymer lint
+script: xvfb-run $(npm bin)/polymer test --module-resolution=node --npm -l firefox
 

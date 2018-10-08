@@ -8,9 +8,10 @@
     "input",
     "password"
   ],
-  "homepage": "https://github.com/collaborne/paper-password-input",
+  "homepage": "https://github.com/chadweimer/paper-password-input",
   "name": "@cwmr/paper-password-input",
   "version": "3.0.0",
+  "reposieory": "github:chadweimer/paper-password-input",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",
@@ -18,19 +19,18 @@
     "type-detect": "1.0.0"
   },
   "main": "paper-password-input.js",
-  "author": "collaborne",
-  "license": "Apache 2",
+  "author": "cwmr",
+  "license": "Apache-2.0",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
-    "@polymer/iron-icons": "^3.0.0-pre.18",
-    "@polymer/iron-validator-behavior": "^3.0.0-pre.18",
-    "@polymer/paper-input": "^3.0.0-pre.18",
-    "@polymer/paper-icon-button": "^3.0.0-pre.18",
-    "@polymer/paper-styles": "^3.0.0-pre.18"
+    "@polymer/iron-icons": "^3.0.0",
+    "@polymer/iron-validator-behavior": "^3.0.0",
+    "@polymer/paper-input": "^3.0.0",
+    "@polymer/paper-icon-button": "^3.0.0",
+    "@polymer/paper-styles": "^3.0.08"
   },
   "devDependencies": {
-    "@polymer/iron-component-page": "^3.0.0-pre.18",
-    "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
+    "@polymer/iron-demo-helpers": "^3.0.0",
     "wct-browser-legacy": "^1.0.1"
   }
 }
